@@ -1,0 +1,14 @@
+@startuml
+start
+:ввод N (количество чисел);
+:set a = 0;
+repeat
+    :ввод a;
+    if (a % 6 == 0 && a % 10 == 4) then (да)
+        :a = a + 1;
+    endif
+    :N = N - 1;
+while (N > 0)
+:вывод a;
+stop
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+start
+:ввод P;
+:set вклад = 1000;
+:set K = 0;
+while (вклад <= 1100) is (да)
+    :вклад = вклад * (1 + P / 100);
+    :K = K + 1;
+endwhile
+:вывод K;
+:вывод вклад;
+stop
+@enduml

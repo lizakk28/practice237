@@ -1,0 +1,15 @@
+@startuml
+start
+:set count = 0;
+repeat
+    :ввод число;
+    if (число == 0) then (да)
+        break;
+    endif
+    if ((abs(число) >= 10 и abs(число) <= 99) и (число % 8 == 0)) then (да)
+        :count = count + 1;
+    endif
+repeat while (число != 0)
+:вывод count;
+stop
+@enduml

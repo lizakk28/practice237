@@ -1,0 +1,18 @@
+@startuml
+start
+:ввод A;
+:ввод B;
+:count = 0;
+if (A < B) then (да)
+  :для num от A до B включительно;
+  repeat
+    :вывод num;
+    :count = count + 1;
+    :num = num + 1;
+  repeat while (num <= B)
+  :вывод "Количество чисел: " + count;
+else (нет)
+  :вывод "Ошибка: A не меньше B";
+endif
+stop
+@enduml

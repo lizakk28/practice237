@@ -1,0 +1,22 @@
+@startuml
+start
+:вывод a(1-7);
+if(a==1)then (да)
+:вывод"понедельник";
+else if(a==2)then(да)
+:вывод"вторник";
+else if(a==2)then(да)
+:вывод"вторник";
+else if(a==3)then(да)
+:вывод"среда";
+else if(a==4)then(да)
+:вывод"четверг";
+else if(a==5)then(да)
+:вывод"пятница";
+else if(a==6)then(да)
+:вывод"суббота";
+else if(a==7)then(да)
+:вывод"воскрсенье";
+endif
+stop
+@enduml

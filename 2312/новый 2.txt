@@ -1,0 +1,14 @@
+@startuml
+start
+
+:ввод (N);
+if (N > 0) then (Да)
+    :N = N - 8;
+else (Нет)
+    :Число не изменяется;
+endif
+
+:вывод(N);
+
+stop
+@enduml
